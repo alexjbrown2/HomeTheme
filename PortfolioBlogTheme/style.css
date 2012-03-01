@@ -1,0 +1,651 @@
+/*
+Theme Name: Portfolio Blog Theme
+Theme URI: http://blog.alexbrownwebdesign.com
+Description: Just trying to survive out here.
+Author: Alex
+Author URI: http://www.alexbrownwebdesign.com
+Version: 0.1
+Tags: first, theme, ever
+.
+Your theme can be your copyrighted work.
+Like WordPress, this work is released under GNU General Public License, version 2 (GPL).
+ 
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ 
+.
+*/
+html, div, span, applet, object, iframe,
+h2, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol,  
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+h1 {
+	font-size: 1.5em;
+}
+:focus {
+	outline: 0;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+body {   
+	font: .9em Arial,sans-serif;
+	text-align: center;
+	color:#333;
+	line-height:1.6em;
+	background:url(images/bg.png);
+	margin: 0px;
+	padding: 10px 0 0 0;
+	
+}
+input {   
+	font: .9em Arial,sans-serif;
+	line-height: 1.5;
+	color:#333;
+}
+
+textarea {   
+	font: 1em Arial,sans-serif;
+	line-height: 1.5;
+	text-align: left;
+	color:#333;
+	background:#FFF;
+	font-size:1em;
+}
+
+/* Headings
+-------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 { 
+	font-weight: normal;
+}
+
+
+
+/* Text elements
+-------------------------------------------------------------- */
+
+p {
+	margin-bottom: 1.5em;
+}
+
+h2 a{
+	font-size:1.7em;
+}
+h3#subtitle{
+	font-size:1.4em;
+	font-style:italic;
+	}
+
+
+dl	{
+	margin:0 1.5em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 1.5em;
+}
+strong {
+	font-weight: bold;
+}
+cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	margin: 0 3em;
+}
+blockquote em, blockquote i, blockquote cite {
+	font-style: normal;
+}
+pre {
+	font: 11px Monaco, monospace;
+	line-height: 1.5;
+	margin-bottom: 1.5em;
+	background-color:#000;
+}
+code {
+	font: 11px Monaco, monospace;
+	color: #000;
+	font-size:.9em;
+	margin: 0px;
+	padding: 0px;
+}
+
+abbr, acronym {
+  cursor: help;
+}
+ins {
+	text-decoration: none;
+}
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	position: relative;
+	
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+
+a {
+	color:#09F;
+}
+img {
+	
+-ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(...);
+
+	}
+a:hover {
+	text-decoration:underline;
+}
+
+/* layout css */
+#wrapper {
+	margin:0;
+	width:100%;
+	height:100%;
+	
+}
+#main {
+	height: auto;
+	margin: 0 auto;
+	width: 1080px;
+	text-align:center;
+	}
+
+#container {
+	padding:0px 0px 10px 80px;
+	height: auto;
+}
+#blogwrap {
+	width:600px;
+	float:left;
+	text-align:left;
+	}
+	
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+/*navigation*/
+.nav-previous {
+	float:left;
+	margin-left:-100px;
+	font-weight:bold;
+}
+.nav-next {
+	height:40px;
+	width:400px;
+	
+	float:right;
+	font-weight:bold;
+	
+}
+
+.navigation {
+	font-size:1.2em;
+	width:960px;
+	margin:0 auto;
+	font-family: 'Carter One', arial, serif;
+	position:relative;
+	clear:both;
+	min-width:960px;
+	height:20px;
+	
+}
+.navigation a{
+	color:#0cf;
+	text-shadow:
+    2px 2px 0 #000,
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+	}
+.bottom-nav-previous {
+	float:left;
+	margin-top:10px;
+	font-weight:bold;
+}
+.bottom-nav-next {
+	float:right;
+	margin-left:-100px;
+	margin-top:10px;
+	font-weight:bold;
+}
+
+
+/* Header CSS */
+#brandingwrap {width:100%;height:196px; background:url(http://blog.alexbrownwebdesign.com/headerbox.png); text-align:center;padding-top:20px; background-repeat:repeat-x;margin:0px;}
+#branding {
+	width:1100px;
+	margin:0px auto 0px auto;
+	text-align:center;
+	}
+#searchbox{
+	position:relative;
+	margin-left:-100px;
+	width:350px;
+	}
+#blog-description {
+	color:#FFF;
+	left: -5000px;
+	position:absolute;
+}
+.me {
+	height:170px;
+	width:170px;
+	float:right;
+	margin-right:40px;
+	margin-top:-3px;
+	}
+#blog-title {
+	float: left;
+	margin-top:5px;
+	}
+#access {
+	position:absolute;
+	left:-5000px;
+	}
+#twitter {
+	height:72px;
+	width:75px;
+	float:right;
+	background:url(http://blog.alexbrownwebdesign.com/twitterscribble.png);
+	background-repeat:no-repeat;
+	margin: 60px 40px 0 40px;
+}
+#twitter:hover {
+	background-position: 0 -72px;
+	cursor:pointer;
+}
+#rss {
+	height:76px;
+	width:75px;
+	float:right;
+	background:url(http://blog.alexbrownwebdesign.com/rssscribble.png);
+	background-repeat:no-repeat;
+	margin: 60px 0 0 40px;
+}
+#searchform{
+	
+	}
+#rss:hover {
+	background-position: 0 -76px;
+	cursor:pointer;
+}
+.headerwidget_search{
+	position:absolute;
+	left:950px;
+	}
+.headersearch li{
+	list-style:none;
+	}
+/* Featured Post CSS */
+.featured {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background:#FFF;
+}
+
+#entirepost {
+	width:600px;
+	padding:0 15px 15px 15px;
+	margin-top:10px;
+	background:#FFF;
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 4px #666;
+	}
+.image-center{
+	width:585px;
+	text-align:center;
+	}
+.image-center a{
+	margin:5px auto;
+	}
+
+.featured  h2 a {
+	font-weight:bold;
+	text-decoration:none;
+	color:#000;
+	font-family: 'Carter One', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	
+	
+}
+
+
+.entry-title a {
+	height:150px;
+	line-height:1em;
+	text-decoration:none;
+	font-family: 'Carter One', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#000;
+}
+.entry-title a:hover {
+	text-decoration:underline;
+	}
+
+.entry-content {
+	margin:15px 10px;
+}
+.entry-content ul {
+	list-style:disc inside;
+}
+/* Menu Styling */
+.menu {
+	text-align:left;
+	width:960px;
+	margin: 0 auto;
+}
+.menu li {
+	float:left;
+	margin-left: 5px;
+
+}
+/* sidebar css */
+#sidebarWrap{
+	width:280px;
+	text-align:center;
+	position:relative;
+	margin:0;
+	padding:0;
+	float:right;
+	}
+#primary {
+	width:260px;
+	float:right;
+	text-align:left;
+	padding:10px;
+	background:#FFF;
+	position:absolute;
+	top:350px;
+	left:0px;
+	border:1px solid #CCC;
+	border-radius:5px;
+}
+#secondary{
+	width:260px;
+	padding:10px;
+	background:FFF;
+	}
+.wp125ad{
+	
+	padding:2px !important;
+	}
+#primary.fixed{
+	position:fixed;
+	top:0;
+	}
+.widget-title {
+	margin: 0 auto;
+	}
+.widget-title {
+	margin-left:-24px;
+	width:308px;
+	height:44px;
+	background:url(images/sidebar280pxbanner.png);
+	font-family: 'Carter One', "Book Antiqua", Palatino, serif;
+	text-decoration:none;
+	font-size:1.4em;
+	background-repeat:no-repeat;
+	text-align:center;
+	color:#FFF;
+	padding-top:8px;
+	text-shadow: 0px 2px 3px #555;
+	}
+.widget-containerwidget_search {
+	margin: 0 auto 20px auto;
+	padding-top:45px;
+	width:170px;
+	height:37px;
+	background:url(http://blog.alexbrownwebdesign.com/search.png);
+	background-repeat:no-repeat;
+	}
+
+
+.headerwidget_search input[type="submit"] {
+	margin-top:5px;
+	float:right;
+	background:url(images/images/searchbox_02.png);
+	background-repeat:no-repeat;
+	border-radius:0 10px 10px 0;
+	height:39px;
+	width:52px;
+	cursor:pointer;
+	padding:0px;
+	border:0;
+	background-color:#FFF;	
+	position:absolute;
+	left:200px;
+	}
+.headerwidget_search input[type="text"]{
+	width:191px;
+	height:27px;
+	margin: 5px 0;
+	padding: 5px;
+	border-radius:10px 0 0 10px;
+	border:0px;
+	background-color:#fff;
+	background:url(images/images/searchbox_01.png);
+	position:absolute;
+}
+	
+.xoxo {
+	list-style-type:none;
+	}
+.xoxo ul {
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	}
+
+#primary li a {
+	font-family: 'Carter One', "Book Antiqua", Palatino, serif;
+	text-decoration:none;
+	color:#09C;
+	font-size:1em;
+	}
+#primary li a:hover {
+	text-decoration:underline;
+	}
+#secondary {
+	float:right;
+	background:#fff;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #999;
+	}
+#secondary li a {
+	font-family: 'Carter One', "Book Antiqua", Palatino, serif;
+	text-decoration:none;
+	color:#333;
+	font-size:1.6em;
+	margin:0 auto;
+	}
+
+/* date css */
+#datewrap {
+	height:30px;
+	width:660px;
+	color:#FFF;
+	float:left;
+	padding:3px;
+	margin-left:-50px;
+	margin-bottom:20px;
+	background-repeat:no-repeat;
+	background:#f93;
+	box-shadow: 2px 2px 4px #666;
+	}
+#datewrap span{
+	text-shadow: 1px 2px 1px #000;
+
+	}
+#month {
+	font-family: 'Carter One', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px;
+	line-height:28px;
+	}
+#date {
+	font-family: 'Carter One', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px;
+	line-height:20px;
+	}
+#year{
+	font-family: 'Carter One', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px;
+	line-height:28px;
+	}
+	
+/*Comments*/
+#comments {
+	width:600px;
+	float:left;
+	padding:5px 15px 15px 15px;
+	margin-top:40px;
+	background:#FFF;
+	border: 1px solid #ccc;
+	-moz-box-shadow: 3px 3px 5px #888;
+	-webkit-box-shadow: 3px 3px 5px#888;
+	box-shadow: 3px 3px 5px #888;
+		}
+a .comment-link {
+float:left;
+}
+a .trackback-link {
+float:left;
+}
+#comments-list h3 {
+	font-family: 'Carter One', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-decoration:none;
+	color:#09C;
+	font-size:1.2em;
+	margin:5px auto;
+}
+#respond h3 {
+	font-family: 'Carter One', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-decoration:none;
+	color:#09C;
+	font-size:1.2em;
+	margin:5px auto;
+}
+#comments-list li {
+	margin-top:30px
+}
+.fn.n {
+	margin-left: 10px;
+	
+}
+#nav-below{
+	width:200px;
+	margin:15px auto;
+	}
+
+
+
+/*Footer Css*/
+
+#footer {
+	background:#000;
+	height:50px;
+	color:#FFF;
+	}
+#footer a {
+	color:#09C;
+}
+/*Twitter Widget Css*/
+#twitter-5 {
+	background:none;
+	
+	}
+#twitter-5 .widget-title a{
+	color:#FFF;
+	text-shadow: 0px 2px 3px #555;
+	font-size:1em;
+	}
+	#twitter-5 h3 a {
+	padding-left:50px;
+	height:45px;
+	color:#333;
+	}
+ul.tweets {
+	border:solid thin #000;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	font-family: 'Carter One', "Book Antiqua", Palatino, serif;
+	text-decoration:none;
+	color:#000;
+	font-size:10px;
+	margin:0 auto;
+	}
+ul.tweets li {
+	margin:5px;
+	}
+ul.tweets a {
+	font-size:6px;
+
+}
+.timesince {
+	float:right;
+	margin-top: 10px;
+	}
+/*
+
+Adapt the following for use in your Child Themes when using
+different font-sizes and line-heights
+
+body, input, textarea {
+    font: --px Arial,sans-serif;
+    line-height:--;
+}
+p, ul, ol, dd, pre {
+    margin-bottom:--em;
+}
+pre, code {
+	font:--px Monaco, monospace;
+	line-height:--;
+}
+
+.single #nav-above {
+    display:none;
+*/
